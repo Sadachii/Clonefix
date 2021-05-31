@@ -1,0 +1,22 @@
+<div class="row no-gutters">
+
+
+    <div class="col-12 full-banner text-white">
+        <div class="p-4 d-flex justify-content-start h-100">
+            <div>
+                <h1 class="h3">{{ movieDestaque.title }}</h1>
+                <small class="d-flex my-2">
+                    <span class="mr-3">⠀{{ movieDestaque.release_date }}⠀</span>
+                    <span class="mr-3">⠀14⠀</span>
+                    <span>⠀153min</span>
+                </small>
+                <p class="d-none d-lg-block">{{ movieDestaque.overview }}</p>
+                <a href="#" class="btn btn-primary text-uppercase font-weight-bold">Assistir</a>
+            </div>
+            <div *ngIf="movieDestaque">
+                <img src="{{imagesWay+movieDestaque.backdrop_path}}" alt="banner">
+               </div>
+        </div>
+    </div> 
+
+</div>

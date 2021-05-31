@@ -1,0 +1,25 @@
+ <div class="title-item">
+    <div class="Filmes" *ngIf="title">
+        <img src="{{imagesWay+title.poster_path}}" alt="Título">
+       </div>
+ <div class="items">
+        <div class="left-side">
+            <button mat-icon-button (click)="toggle()">
+                <mat-icon class="btn btn-fav" *ngIf="selected">
+                    favorite
+                </mat-icon>
+            
+                <mat-icon class="btn btn-fav" *ngIf="!selected">
+                    favorite_border
+                </mat-icon>
+            </button>
+
+            <button type="button" class="btn btn-play"><i class="material-icons">play_arrow</i></button>
+            
+            <h2>{{ title.title }}</h2>
+            <ul class="infos">
+                <li class="relevance">97% relevante</li>
+            </ul>
+         </div>
+      </div>
+</div>
